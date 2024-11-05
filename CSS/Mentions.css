@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+ header{
+    position: fixed;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:70px;
+    background-color:black;
+    z-index: 1000;
+    }
+    
+    .logo img{
+        display: flex;
+        position: fixed;
+        margin:0px;
+        width:40px;
+        height:40px;
+    }
+    .logo h1{
+        height:auto;
+        margin: 10px 15px 10px 10px;
+        font-size: 1.2em;
+        color:white;
+        padding-left: 40px;
+    }
+.btn{
+    display:flex;
+    justify-content: right;
+    position:absolute;
+    gap: 10px;
+    right:30px;
+    top: 20px;
+    padding: 0 40px;
+    text-align: center;
+    cursor: pointer;
+    }
+    .Accueil{
+    margin-right: 30px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+    }
+    .Services{
+    margin-right: 30px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+    }
+    .Réalisations{
+    margin-right: 30px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+    }
+    .Blog{
+    margin-right: 30px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+    }
+    .Contact{
+        margin-right: 10px;
+        font-size: 1rem;
+        border: none;
+        background-color:black;
+        color: white;
+        }
+header img{
+width: 100%;
+height: 100px;
+}
+
+#Intro{
+text-align: center;
+height:230px;
+color: rgb(0, 0, 0);
+
+}
+.Introduction h1{
+padding-top: 100px;
+color: rgb(0, 0, 0);
+font-size:1.9em;
+}
+.Introduction p{
+margin:10px;
+color: rgb(0, 0, 0);
+font-size:medium
+}
+/* trait separateur */
+hr{
+    border-top: 3px solid #1526e3;
+    color: #2430e4;
+    overflow: visible;
+    text-align: center;
+    width: 350px;
+    margin-left: 450px;
+    margin-top: 10px;
+    }
+
+/* Menu accordeon */
+#accordeon{
+    height: 350px;
+}
+.accordion-header {
+    background-color: #f2f2f2;
+    color: #444;
+    cursor: pointer;
+    padding: 18px ;
+    width: 800px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 200px;
+  }
+  
+  .accordion-header:hover {
+    background-color: #69c5e7;
+  }
+  
+  .accordion-header i {
+    margin-right: 10px;
+  }
+  
+  .accordion-content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-left: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .accordion-header {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .accordion-header {
+      font-size: 22px;
+    }
+  }
+
+  a[href^='mailto']::before {
+    content: '📧 ';
+  }
+
+
+/*footer */
+ /*footer */
+ #Baspage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:180px;
+    background-color: #e8e5e5;
+}
+.Adresse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.Adresse img{
+    width:20px;
+    height:20px;
+    margin-top: 10px;
+}
+
+
+.Liens{
+    align-items: center;
+    height: 100px;
+}
+.Liens h3{
+    margin:10px;
+    align-items: center;
+}
+.Liens li{
+    list-style-type: none;
+    align-items: center;
+}
+li::before{
+    content: ">";
+    padding-right: 8px;
+    color:#0d6efd;
+}
+
+.Projets{
+    align-items: center;
+    height: 100px;
+}
+.Projets h3{
+    margin:10px;
+    align-items: center;
+}
+.Projets li{
+    list-style-type: none;
+    align-items: center;
+}
+li::before{
+    content: ">";
+    padding-right: 8px;
+    color:#0d6efd;
+}
+
+.Articles{
+    align-items: center;
+    height: 100px;
+}
+.Articles h3{
+    margin:10px;
+    align-items: center;
+}
+.Articles li{
+    list-style-type: none;
+    align-items: center;
+}
+li::before{
+    content: ">";
+    padding-right: 8px;
+    color:#0d6efd;
+}
+
+#Copy{
+    width: 100%;
+    height:40px;
+    padding-top: 10px;
+    background-color: rgb(9, 9, 9);
+    color:white;
+    text-align: center;
+ }
+
+ @media(hover:hover){
+    footer a:hover{
+        background:#298eff;
+        opacity: 0.8;
+        }
+    }
+    
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page accueil</title>
+    <link rel="stylesheet" href="../CSS/page accueil style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<header>
+    <div class="logo">
+        <div class="logo" id="logo">
+        <a href="index.html"><img src="../img/apple-touch-icon.png" alt="Icone"></a>
+        <h1>JOHN DOE</h1>
+    </div>  
+        
+    <nav class="menu">
+            <!--  icone menu burger -->
+        <label for="toggle">☰</label>
+            <!-- lien entre checkbox et l'icone -->
+        <input type="checkbox" id="toggle">
+            <div class="btn">
+                <a href="./index.html" target ="top"><button type="button" class = "active">ACCUEIL</button></a> 
+                <a href="./offres.html" target ="top"><button type="button" class = "Services">SERVICES</button></a> 
+                <a href="./Réalisations.html" target ="top"><button type="button" class = "Réalisations">REALISATIONS</button></a> 
+                <a href="./blog.html" target ="top"><button type="button" class = "Blog">BLOG</button></a> 
+                <a href="./contact.html" target ="top"><button type="button" class = "Contact">ME CONTACTER</button></a> 
+            </div>
+    </nav>
+</header>
+<body>
+
+    <!-- bloc 2 -->
+    <main>  
+        <div class="Entete">
+                <img src="../img/hero-bg.jpg" alt="fond">
+                <h1>Bonjour, Je suis John Doe</h1>
+                    <h2>Développeur web full stack</h2>
+                        <!-- btn vers container au dessous -->
+                        <form action="#container" method="get" target="_blank"><button type="submit">En savoir plus</button>
+                        </form>
+        </div>
+    </main>
+
+
+    <!-- bloc 3 -->
+    <main>
+        <Section id="container">   
+            <div class="Apropos">
+                <h1>A propos</h1>
+                    <p>Passionné par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<b>intégrateur-développeur</b> web au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du <b>développement web.</b></p>
+                    <p>Basé à Lyon, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma formation de <b>développeur web full stack.</b></p>
+                    <p>J'accorde une attention particulière à la qualité du code que j'écris et je respecte les bonnes pratiques du web.</p>
+                    <hr />
+            </div>
+            <div class ="Competences">
+                <img src="../img/about.jpg" alt="Portrait homme">
+                <h1><stong> Mes Compétences </stong></h1> 
+                               
+                    <label for="file">HTML5 90%</label>
+                        <progress id="barrehtml" value="90" max="100"></progress>
+
+                    <label for="file">CSS3 80%</label>
+                        <progress id="barrecss"value="80" max="100"></progress>
+
+                    <label for="file">JAVASCRIPT 70%</label>
+                        <progress id="barrejavascipt"value="70"max="100"></progress>
+
+                    <label for="file">PHP 60%</label>
+                        <progress id="barrephp"value="60"max="100"></progress>
+
+                    <label for="file">REACT 50%</label>
+                        <progress id="barrereact"value="50"max="100"></progress>
+            </div>                                   
+        </section>  
+    </main> 
+    
+    <!-- bas de page -->
+    <footer>
+        <section id="Baspage">
+            <div class="Adresse">
+                <address>
+                    <p><strong>John DOE</strong><br>40 rue Laure Diebold<br>69009 Lyon, France</p>
+                    <a href="Télephone: 06.20.30.40.50">Téléphone:06.20.30.40.50</a>
+                    <br>
+                        <a target="blank" href="https://api.github.com/users/github-john-doe/repos"><img src="../img/logogithub.png" alt="logo Github"></a>
+                        <a target="blank" href="#"><img src="../img/logotwitter.png" alt="logo Twitter"></a>
+                        <a target="blank" href="#"><img src="../img/logolinkedin.png" alt="logo Linkedin"></a>
+                </address> 
+            </div>
+    
+            <div class="Liens">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href ="index.html">Accueil</a></li>
+                    <li><a href ="index.html">A propos</a></li>
+                    <li><a href ="offres.html">Services</a></li>
+                    <li><a href ="contact.html">Me contacter</a></li>
+                    <li><a href ="mentions.html">Mentions légales</a></li>
+                </ul>
+            </div>
+    
+            <div class="Projets">
+                <h3><a href="Réalisations.html">Mes dernières réalisations</a></h3>
+                <ul>
+                    <li>Fresh food</li>
+                    <li>Restaurant Akira</li>
+                    <li>Espace bien-être</li>
+                </ul>
+            </div>
+    
+            <div class="Articles">
+                <h3><a href="blog.html">Mes derniers articles</a></h3>
+                <ul>
+                    <li>Coder son site en HTML/CSS</li>
+                    <li>Vendre ses produits sur le web</li>
+                    <li>Se positionner sur Google</li>
+                </ul>
+            </div>   
+        </section>
+        <section id="Copy">
+            <div class="Copy"> 
+                <p><a href="index.html">@Designed by John DOE</a></p>
+            </div>
+        </section>    
+    </footer>
+</body>
+</html>

@@ -1,0 +1,460 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+
+ header{
+    display: flex;
+    width:100%;
+    height:100px;
+    background-color:black;
+}
+
+.logo{
+    max-width:100%;
+    max-height:100%;
+    justify-content:left ;
+    z-index: 1000;
+}
+
+.logo img{
+    display: flex;
+    position: fixed;
+    margin:0px;
+    width:50px;
+    height:40px;
+}
+.logo h1{
+    height:auto;
+    margin: 20px 0px 10px 20px;
+    font-size: 1.2em;
+    color:white;
+    padding-left: 40px;
+}
+.menu{
+    max-width:100%;
+    max-height:100%;
+}
+
+.btn{
+    display:flex;
+    justify-content: right;
+    position:absolute;
+    gap: 30px;
+    right:30px;
+    top: 0px;
+    padding: 0 40px;
+    text-align: center;
+    cursor: pointer;
+    }
+    
+    .Accueil{
+        margin-right: 30px;
+        font-size: 1rem;
+        border: none;
+        background-color:black;
+        color: white;
+        }
+    .Services{
+        margin-right: 30px;
+        font-size: 1rem;
+        border: none;
+        background-color:black;
+        color: white;
+        }
+    .Réalisations{
+        margin-right: 30px;
+        font-size: 1rem;
+        border: none;
+        background-color:black;
+        color: white;
+        }
+    .Blog{
+        margin-right: 30px;
+        font-size: 1rem;
+        border: none;
+        background-color:black;
+        color: white;
+        }
+    .Contact{
+        margin-right: 10px;
+        font-size: 1rem;
+        border: none;
+        background-color:black;
+        color: white;
+        }
+        
+/* Header/menu navigation */
+
+/*  label masque au format ordinateur */
+
+@media all and (max-width: 768px){
+    nav{
+        height: 60px;
+    }
+    nav .btn{
+        display: none;
+    }
+    label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+}
+nav{
+    max-width:100%;
+    max-height:100%;
+}
+nav .btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .btn a {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    background: #3924ac
+}
+.label{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    align-items: center;
+    margin: 0;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* masquer checkbox format ordinateur/format mobile menu burger */
+label, #toggle{
+    display: none;
+}
+ 
+@media all and (max-width: 767px){
+    nav{
+        height: 60px;
+    }
+    nav .btn{
+        display: none;
+        flex-direction: column;
+        height: 60px;
+    }
+    nav .btn a {
+        width: 50%;
+    }
+    label {
+        width: 30px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 0 auto;
+        font-size:120%;
+        color: white;
+        cursor: pointer;
+    }
+    #toggle:checked + .btn {
+        display: flex;
+    }
+}
+
+
+
+
+#main{
+    display: flex;
+    position:relative;
+    width:100%;
+}
+
+#Banniere{
+    margin:0;
+}
+#Banniere img{
+    width: 100%;
+    height:80px;
+}
+    
+
+
+#Intro{
+text-align: center;
+height:90px;
+color: rgb(0, 0, 0);
+}
+.Introduction h1{
+padding-top:30px;
+color: rgb(0, 0, 0);
+font-size:1.9em;
+}
+.Introduction p{
+margin:10px;
+color: rgb(0, 0, 0);
+font-size:medium;
+border-bottom-style:#0d6efd solid 0.1em;
+}
+/* trait separateur */
+hr{
+    border-top: 3px solid #1526e3;
+    color: #2430e4;
+    overflow: visible;
+    text-align: center;
+    width: 300px;
+    margin-left: 670px;
+    margin-top: 10px;
+    }
+
+/* Intro - formtat portable */
+@media all and (max-width: 767px){
+    #Intro, .Introduction, .Introduction h1, .Introduction p,.hr{
+        width:100%;
+        justify-content: center;
+        text-align:center
+}
+}
+
+/* Intro format tablette */
+@media (min-width:768px) and (max-width:1368px){
+    #Intro, .Introduction, .Introduction h1, .Introduction p,.hr{
+        width:100%;
+        justify-content: center;
+        text-align:center
+}
+}
+
+
+
+
+.container{
+    display: flex;
+    width: 100%;
+    height:700px;
+    gap: 20px;
+    border-spacing: 5px 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col{
+    position:relative;
+    flex-basis: 0;
+    flex-grow:1;
+    width:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height:550px;
+    margin-left: 50px;
+    border: rgb(184, 183, 183) solid 0.1em;
+    border-radius: 3%;
+    line-height: 30px;
+}
+
+.card img{
+display: inline-block;
+position: relative;
+width :400px;
+}
+.card h1{
+text-align: left;
+padding: 10px;
+}
+.card p{
+text-align: left;
+line-height: normal; 
+padding: 10px;
+}
+.card h3{
+display: flex;
+justify-content: center;
+align-items: left;
+border: 1px solid rgb(184, 183, 183);
+font-size: medium; 
+background-color: #e8e5e5;
+padding-bottom: 0px;
+}
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:#0d6efd solid 0.1em;
+    color:white;
+    background-color:#0d6efd;
+    width: 90px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10%;
+    left:50%
+    }
+
+/* blocs - formtat portable */
+@media all and (max-width: 767px){
+
+ 
+}
+
+/* Intro format tablette */
+@media (min-width:768px) and (max-width:1368px){
+    
+}
+
+    /* Footer */
+    #Baspage{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height:250px;
+        background-color: #e8e5e5;
+    }
+    .Adresse{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+    }
+    .Adresse img{
+        width:20px;
+        height:20px;
+        margin-top: 10px;
+    }
+    
+    
+    .Liens{
+        align-items: center;
+        height: 100px;
+    }
+    .Liens h3{
+        margin:10px;
+        align-items: center;
+    }
+    .Liens li{
+        list-style-type: none;
+        align-items: center;
+    }
+    li::before{
+        content: ">";
+        padding-right: 8px;
+        color:#0d6efd;
+    }
+    
+    .Projets{
+        align-items: center;
+        height: 100px;
+    }
+    .Projets h3{
+        margin:10px;
+        align-items: center;
+    }
+    .Projets li{
+        list-style-type: none;
+        align-items: center;
+    }
+    li::before{
+        content: ">";
+        padding-right: 8px;
+        color:#0d6efd;
+    }
+    
+    .Articles{
+        align-items: center;
+        height: 100px;
+    }
+    .Articles h3{
+        margin:10px;
+        align-items: center;
+    }
+    .Articles li{
+        list-style-type: none;
+        align-items: center;
+    }
+    li::before{
+        content: ">";
+        padding-right: 8px;
+        color:#0d6efd;
+    }
+    
+    #Copy{
+        width: 100%;
+        height:40px;
+        padding-top: 10px;
+        background-color: rgb(9, 9, 9);
+        color:white;
+        text-align: center;
+     }
+  
+ @media(hover:hover){
+    footer a:hover{
+        background:#298eff;
+        opacity: 0.8;
+        }
+    }
+
+   /*footer */
+/* Bas de page - format portable */
+@media all and (max-width: 768px){
+    #Baspage{
+        display:block;
+        width:100%;
+        padding-left:20px;
+        line-height: 100%;
+    }
+    .Adresse{
+        width: 100%;
+        margin:0, 10px;
+        margin-top:5%;
+    }
+    .Liens, .Projets, .Articles{
+        width: 100%;
+        margin:0, 10px;
+        margin-top:5%;
+    }
+}
+/* format tablette */
+@media (min-width:768px) and (max-width:1368px){
+    #Baspage{
+        flex-wrap: wrap;
+        width:100%
+    }
+    }
+    .Adresse, .Projets {
+        float:left;
+        width: 50%;
+        padding-left: 10%;
+    }
+    .Liens, .Articles{
+        float:right;
+        width:50%;  
+    }
+ 
+    
+    

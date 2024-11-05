@@ -1,0 +1,304 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+    header{
+    position: fixed;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:60px;
+    background-color:black;
+    z-index: 1000;
+    }
+    
+    .logo img{
+        display: flex;
+        position: fixed;
+        margin:0px;
+        width:40px;
+        height:40px;
+    }
+    .logo h1{
+        height:auto;
+        margin: 10px 15px 10px 10px;
+        font-size: 1.2em;
+        color:white;
+        padding-left: 40px;
+    }
+    .btn{
+        display:flex;
+        justify-content: right;
+        position:absolute;
+        gap: 10px;
+        right:30px;
+        top: 20px;
+        padding: 0 40px;
+        text-align: center;
+        cursor: pointer;
+        }
+.Accueil{
+    margin-right: 30px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+    }
+ .Services{
+    margin-right: 30px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+}
+.Réalisations{
+    margin-right: 30px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+}
+
+ .Blog{
+    margin-right: 30px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+}
+.Contact{
+    margin-right: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color:black;
+    color: white;
+}
+.Contact a{
+    text-decoration:none;
+    background:#e8e5e5 ;
+}
+
+/* central */
+
+Body{
+    margin:0px;
+    padding: 0px;
+    width:auto;height: 100%;
+    background-image: url(../img/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #0d6efd;
+}   
+
+.Intro{
+    display: flex;
+    flex-direction:column;
+    height:200px;
+    align-content: center;
+    margin-left:150px;
+    margin-right: 150px;
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    
+    }
+    .Intro h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+    }
+    .Intro p{
+    margin-top:18px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-size:medium
+    }
+/* trait separateur */
+    hr{
+        border-top: 3px solid #1526e3;
+        color: #2430e4;
+        overflow: visible;
+        text-align: center;
+        width: 400px;
+        margin-left: 300px;
+        margin-top: 10px;
+        }
+
+/* Formyulaire de contact */
+
+#container{
+    display:flex;
+    max-height: 800px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(242, 242, 238);
+    border-style: solid beige;
+    box-shadow: 12px 12px 2px 1px rgba(132, 132, 133, 0.2);
+
+}
+.Formulaire{
+    width: 400px;
+}
+.Formulaire h1{
+    text-align: left;
+    height: 50px;
+    border-style: black solid 0.5em;
+    font-size:1.4em;
+    color:black;
+    margin-top: 10px;
+    padding-left:60px;
+}
+
+input{
+width: 350px;
+height: 40px;
+padding-left: 15px; 
+margin-left: 30px;   
+}
+textarea{
+width: 350px;
+height: 150px;
+padding-left: 15px; 
+padding-top:20px;
+margin-left:30px; 
+}
+
+.bouton{
+display: flex;
+justify-content: center;
+align-items: center;
+border:#0d6efd solid 0.1em;
+color:white;
+background-color:#0d6efd;
+width: 90px;
+height: 30px;
+margin: 20px;
+margin-left:160px;
+border-radius: 10%;
+}
+
+/* Mes coordonnées */
+.coordonnées{
+    width:400px;
+}
+.Coordonnées h1{
+    text-align: left;
+    height: 50px;
+    border-style: black solid 0.5em;
+    font-size:1.4em;
+    color:black;
+    margin-top: 10px;
+}
+
+.Coordonnées address{
+    margin-top:-15px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-size:medium;
+}
+iframe{
+    align-content: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+ /*footer */
+ #Baspage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:180px;
+    background-color: #e8e5e5;
+}
+.Adresse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.Adresse img{
+    width:20px;
+    height:20px;
+    margin-top: 10px;
+}
+
+
+.Liens{
+    align-items: center;
+    height: 100px;
+}
+.Liens h3{
+    margin:10px;
+    align-items: center;
+}
+.Liens li{
+    list-style-type: none;
+    align-items: center;
+}
+li::before{
+    content: ">";
+    padding-right: 8px;
+    color:#0d6efd;
+}
+
+.Projets{
+    align-items: center;
+    height: 100px;
+}
+.Projets h3{
+    margin:10px;
+    align-items: center;
+}
+.Projets li{
+    list-style-type: none;
+    align-items: center;
+}
+li::before{
+    content: ">";
+    padding-right: 8px;
+    color:#0d6efd;
+}
+
+.Articles{
+    align-items: center;
+    height: 100px;
+}
+.Articles h3{
+    margin:10px;
+    align-items: center;
+}
+.Articles li{
+    list-style-type: none;
+    align-items: center;
+}
+li::before{
+    content: ">";
+    padding-right: 8px;
+    color:#0d6efd;
+}
+
+#Copy{
+    width: 100%;
+    height:40px;
+    padding-top: 10px;
+    background-color: rgb(9, 9, 9);
+    color:white;
+    text-align: center;
+ }
+
+ @media(hover:hover){
+    footer a:hover{
+        background:#298eff;
+            opacity: 0.8;
+        }
+    }
+    
