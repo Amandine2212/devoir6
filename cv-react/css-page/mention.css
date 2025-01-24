@@ -1,0 +1,13 @@
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+th {
+  width: 100%;
+}
+tr:hover {
+  background-color: rgb(120, 184, 184);
+  border: 3px solid #0c88b9;
+}
